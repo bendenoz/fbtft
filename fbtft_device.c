@@ -106,7 +106,7 @@ static unsigned height;
 module_param(height, uint, 0);
 MODULE_PARM_DESC(height, "Display height, used with the custom argument");
 
-static unsigned buswidth;
+static unsigned buswidth = 8;
 module_param(buswidth, uint, 0);
 MODULE_PARM_DESC(buswidth, "Display bus width, used with the custom argument");
 
