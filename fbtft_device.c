@@ -1014,6 +1014,7 @@ static void fbtft_device_spi_delete(struct spi_master *master, unsigned cs)
 static int fbtft_device_spi_device_register(struct spi_board_info *spi)
 {
 	struct spi_master *master;
+	struct spi_device *spi_device;
 
 	master = spi_busnum_to_master(spi->bus_num);
 	if (!master) {
